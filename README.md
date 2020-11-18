@@ -12,7 +12,7 @@
 hyperlink intercepted
 
 1)  Hide all other iframes
-2)  Show targetted iframe
+2)  Show targeted iframe
 
 need selectable behavior like iron-pages
 
@@ -24,10 +24,10 @@ Take 2
 <a be-target-caching href=b.html target=myIframeB>B</a>
 ...
 
-<channel-ector>
+<xtal-channeling>
 <iframe name=myIframeA></iframe>
 <iframe name=myIframeB></iframe>
-</channel-ector>
+</xtal-channeling>
 ```
 
 1)  Intercept all clicks on hyperlinks

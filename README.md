@@ -2,17 +2,16 @@
 
 ```html
 <target-caching upgrade=a if-wants-to-be=target-caching></target-caching>
-<a be-target-caching href=a.html target=myIframe>A</a>
-<a be-target-caching href=b.html target=myIframe>B</a>
+<a be-target-caching href=a.html target=myIframeA>A</a>
+<a be-target-caching href=b.html target=myIframeB>B</a>
 ...
-<iframe name=myIframe></a>
+<iframe be-grouped=myGroup name=myIframeA></iframe>
+<iframe be-grouped=myGroup name=myIframeB></iframe>
 ```
 
 hyperlink intercepted
 
-1)  clone of iframe made
-2)  If target iframe already has an href, hide it, remove name
-3)  give name to clone, never set href directly on clone, hide clone
-4)  keep a mapping between href's and iframes somewhere
-5)  keep proxy between original iframe and all other iframes?
+1)  Hide all other iframes
+2)  Show targetted iframe
+
 
